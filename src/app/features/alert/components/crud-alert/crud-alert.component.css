@@ -1,0 +1,5 @@
+
+::ng-deep .red-snackbar {
+    background: rgb(236, 61, 61) !important;
+    color: white !important;
+}

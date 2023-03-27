@@ -1,0 +1,63 @@
+<div class="container mx-auto px-6">
+    <div class="">
+        <div class="flex justify-between items-center border h-16 w-full my-8 rounded-lg px-4">
+            <div class="flex justify-start items-center">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6 8a1 1 0 0 0 1-1V5.923c0-.459.022-.57.082-.684a.364.364 0 0 1 .157-.157c.113-.06.225-.082.684-.082h10.154c.459 0 .57.022.684.082.07.038.12.087.157.157.06.113.082.225.082.684v12.154c0 .459-.022.57-.082.684a.363.363 0 0 1-.157.157c-.113.06-.225.082-.684.082H7.923c-.459 0-.57-.022-.684-.082a.363.363 0 0 1-.157-.157c-.06-.113-.082-.225-.082-.684V17a1 1 0 1 0-2 0v1.077c0 .76.082 1.185.319 1.627.223.419.558.753.977.977.442.237.866.319 1.627.319h10.154c.76 0 1.185-.082 1.627-.319a2.36 2.36 0 0 0 .977-.977c.237-.442.319-.866.319-1.627V5.923c0-.76-.082-1.185-.319-1.627a2.363 2.363 0 0 0-.977-.977C19.262 3.082 18.838 3 18.077 3H7.923c-.76 0-1.185.082-1.627.319a2.363 2.363 0 0 0-.978.977C5.083 4.738 5 5.162 5 5.923V7a1 1 0 0 0 1 1zm9.593 2.943c.584.585.584 1.53 0 2.116L12.71 15.95c-.39.39-1.03.39-1.42 0a.996.996 0 0 1 0-1.41 9.552 9.552 0 0 1 1.689-1.345l.387-.242-.207-.206a10 10 0 0 1-2.24.254H2.998a1 1 0 1 1 0-2h7.921a10 10 0 0 1 2.24.254l.207-.206-.386-.241a9.562 9.562 0 0 1-1.69-1.348.996.996 0 0 1 0-1.41c.39-.39 1.03-.39 1.42 0l2.883 2.893z"
+                        fill="green" />
+                </svg>
+                <span class="ml-2 font-medium text-green-700">Log in to be able to apply for the works that suit you and
+                    follow the businesses that suit you</span>
+            </div>
+            <a routerLink="/auth/sign-in" class="text-blue-500 text-sm">can you click here for Sign in</a>
+        </div>
+        <div class="flex justify-between">
+            <div class="w-96 h-96 p-4 border rounded-lg bg-gray-100 shadow-sm">
+                <div class="">
+                    <div class="flex flex-col w-full justify-between px-2">
+                        <input class="border p-2 rounded-lg outline-none" type="text" placeholder="search...">
+                        <div class="relative w-full flex justify-start">
+                            <div mat-button [matMenuTriggerFor]="dates" class="flex justify-between items-center w-full border bg-white p-2 rounded-lg mt-2 cursor-pointer">  
+                                <span>Publication date </span>
+                                <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </div>
+                            <mat-menu #dates="matMenu" class="w-52 p-2">
+                                <button class="w-full text-left pl-4 hover:bg-gray-100 py-2">last 24hours</button>
+                                <button class="w-full text-left pl-4 hover:bg-gray-100 py-2">last 3days</button>
+                                <button class="w-full text-left pl-4 hover:bg-gray-100 py-2">last 7 hours</button>
+                                <button class="w-full text-left pl-4 hover:bg-gray-100 py-2">last 14 hours</button>
+                                <button class="w-full text-left pl-4 hover:bg-gray-100 py-2">all</button>
+                            </mat-menu>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full mt-4 px-3">
+                    <p class="text-xs">Log in to be able to apply for the works that suit you andfollow the businesses
+                        that suit you</p>
+                    <img class="w-36 h-36 mx-auto" src="assets/images/login.png" alt="" srcset="">
+                    <!-- <img class="w-36 h-36 mx-auto" src="assets/images/search.png" alt="" srcset=""> -->
+                </div>
+            </div>
+            <div class="flex flex-col w-full px-4 ml-4">
+                <div class="flex justify-between items-center border px-4 py-2 rounded-lg mb-4">
+                    <span class="text-sm font-medium text-gray-600">200 jobs</span>
+                    <svg fill="green" class="w-6 h-6 cursor-pointer" viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26 20h-6v-2h6zm4 8h-6v-2h6zm-2-4h-6v-2h6z" />
+                        <path
+                            d="M17.003 20a4.895 4.895 0 0 0-2.404-4.173L22 3l-1.73-1-7.577 13.126a5.699 5.699 0 0 0-5.243 1.503C3.706 20.24 3.996 28.682 4.01 29.04a1 1 0 0 0 1 .96h14.991a1 1 0 0 0 .6-1.8c-3.54-2.656-3.598-8.146-3.598-8.2Zm-5.073-3.003A3.11 3.11 0 0 1 15.004 20c0 .038.002.208.017.469l-5.9-2.624a3.8 3.8 0 0 1 2.809-.848ZM15.45 28A5.2 5.2 0 0 1 14 25h-2a6.5 6.5 0 0 0 .968 3h-2.223A16.617 16.617 0 0 1 10 24H8a17.342 17.342 0 0 0 .665 4H6c.031-1.836.29-5.892 1.803-8.553l7.533 3.35A13.025 13.025 0 0 0 17.596 28Z" />
+                        <path data-name="&lt;Transparent Rectangle&gt;" style="fill:none" d="M0 0h32v32H0z" />
+                    </svg>
+                </div>
+                <div class="">
+                    <app-list-job></app-list-job>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

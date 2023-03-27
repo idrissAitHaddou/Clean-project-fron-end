@@ -1,0 +1,73 @@
+<div class="flex flex-col w-full bg-gray-100 p-2 border rounded-lg">
+    <div class="flex justify-between items-center w-full">
+        <div class="flex justify-start items-center">
+            <img class="w-8 h-8 rounded-full" src="assets/images/service1.png" alt="" srcset="">
+            <div class="flex flex-col justify-center items-start ml-2">
+                <span class="font-medium text-md">A woman for the minaj</span>
+                <span>Entreprise X</span>
+            </div>
+        </div>
+        <div class="flex justify-end gap-x-3 pr-4">
+            <!-- button learn more about job -->
+            <button mat-button (click)="openDialogDetails()" mat-raised-button matTooltip="for see learn more" matTooltipClass="example-tooltip-uppercase"
+                aria-label="Button that shows a red tooltip" class="example-button">
+                <svg class="w-5 h-5" viewBox="0 0 28 28" fill="blue" xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd"
+                        d="M17.747 15.415c.238-.54.372-1.143.372-1.413 0-2.348-1.824-4.25-4.073-4.25-2.25 0-4.073 1.902-4.073 4.25 0 2.347 2.037 3.887 4.073 3.887 1.303 0 2.462-.637 3.206-1.63a4.29 4.29 0 0 0 .495-.844Zm-3.701.349c.51 0 .975-.196 1.332-.518.432-.39.622-.965.622-1.244 0-1.174-.828-2.126-1.954-2.126-1.125 0-2.046.95-2.046 2.124 0 .81.92 1.764 2.046 1.764Z"
+                        fill="blue" fill-rule="evenodd" />
+                    <path clip-rule="evenodd"
+                        d="M1.092 14.272a.448.448 0 0 1 0-.545.389.389 0 0 0 .028-.039C4.78 8.343 9.32 5.5 14.014 5.5c4.689 0 9.224 2.836 12.882 8.17a.583.583 0 0 1-.01.676C23.23 19.67 18.698 22.5 14.014 22.5c-4.705 0-9.257-2.857-12.922-8.228Zm2.847-.92a1.04 1.04 0 0 0 0 1.294c3.135 3.898 6.665 5.729 10.075 5.729 3.41 0 6.94-1.83 10.075-5.729a1.04 1.04 0 0 0 0-1.294c-3.135-3.897-6.665-5.727-10.075-5.727-3.41 0-6.94 1.83-10.075 5.727Z"
+                        fill="blue" fill-rule="evenodd" />
+                </svg>
+            </button>
+            <!-- button cancel job -->
+            <button mat-button (click)="openDialogCancel()" mat-raised-button matTooltip="can you cancel this job" matTooltipClass="example-tooltip-uppercase"
+                aria-label="Button that shows a red tooltip" class="example-button">
+                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xml:space="preserve">
+                    <path fill="none" stroke="red" stroke-width="2" stroke-miterlimit="10"
+                        d="m5 41 6-40h42l6 40m-38 0c0 6.075 4.925 11 11 11s11-4.925 11-11h16v22H5V41h16zm18-10L25 17m0 14 14-14" />
+                </svg>
+            </button>
+            <!-- button delete -->
+            <button mat-button (click)="openDialogDelete()" mat-raised-button matTooltip="can you delete this job" matTooltipClass="example-tooltip-uppercase"
+                aria-label="Button that shows a red tooltip" class="example-button">
+                <svg class="icon w-5 h-5" fill="red" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M160 256H96a32 32 0 0 1 0-64h256V95.936a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32V192h256a32 32 0 1 1 0 64h-64v672a32 32 0 0 1-32 32H192a32 32 0 0 1-32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-128a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32zm192 0a32 32 0 0 1-32-32V416a32 32 0 0 1 64 0v320a32 32 0 0 1-32 32z" />
+                </svg>
+            </button>
+            <!-- button update -->
+            <button mat-button (click)="openDialogEdit()" mat-raised-button matTooltip="can you delete this job" matTooltipClass="example-tooltip-uppercase"
+                aria-label="Button that shows a red tooltip" class="example-button">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="si-glyph si-glyph-edit w-5 h-5"><g fill="green" fill-rule="evenodd"><path d="m15.682 2.91-1.535-1.514c-.41-.408-1.218-.577-1.607-.189L6.485 7.234s-1.321 3.913-1.446 4.242c-.099.262.231.59.46.475.374-.186 4.105-1.631 4.105-1.631l6.071-6.057c.39-.388.418-.946.007-1.353ZM9.021 9.854l-2.567.974-.461-.425 1.225-2.965.741.546h1.058l.004 1.87Z" class="si-glyph-fill"/><path d="M12.042 10.345v3.697H.958V3l8.183-.083.812-.859H0V15h13l-.057-5.422-.901.767Z" class="si-glyph-fill"/></g></svg>
+            </button>
+        </div>
+    </div>
+    <div class="flex justify-between items-center gap-x-2 mt-2 border-t-2 p-2 pt-4">
+        <div class="flex justify-start">
+            <div class="flex gap-x-1">
+                <span>Your applied at : </span>
+                <svg class="w-4 h-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#454242"
+                        d="M5.673 0a.7.7 0 0 1 .7.7v1.309h7.517v-1.3a.7.7 0 0 1 1.4 0v1.3H18a2 2 0 0 1 2 1.999v13.993A2 2 0 0 1 18 20H2a2 2 0 0 1-2-1.999V4.008a2 2 0 0 1 2-1.999h2.973V.699a.7.7 0 0 1 .7-.699ZM1.4 7.742v10.259a.6.6 0 0 0 .6.6h16a.6.6 0 0 0 .6-.6V7.756L1.4 7.742Zm5.267 6.877v1.666H5v-1.666h1.667Zm4.166 0v1.666H9.167v-1.666h1.666Zm4.167 0v1.666h-1.667v-1.666H15Zm-8.333-3.977v1.666H5v-1.666h1.667Zm4.166 0v1.666H9.167v-1.666h1.666Zm4.167 0v1.666h-1.667v-1.666H15ZM4.973 3.408H2a.6.6 0 0 0-.6.6v2.335l17.2.014V4.008a.6.6 0 0 0-.6-.6h-2.71v.929a.7.7 0 0 1-1.4 0v-.929H6.373v.92a.7.7 0 0 1-1.4 0v-.92Z" />
+                </svg>
+                <span>12-02-2023</span>
+            </div>
+            <span>/</span>
+            <div class="flex gap-x-1">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity=".4"
+                        d="M17.998 7.16a.605.605 0 0 0-.19 0 2.573 2.573 0 0 1-2.48-2.58c0-1.43 1.15-2.58 2.58-2.58a2.58 2.58 0 0 1 2.58 2.58 2.589 2.589 0 0 1-2.49 2.58Zm-1.03 7.28c1.37.23 2.88-.01 3.94-.72 1.41-.94 1.41-2.48 0-3.42-1.07-.71-2.6-.95-3.97-.71M5.967 7.16c.06-.01.13-.01.19 0a2.573 2.573 0 0 0 2.48-2.58c0-1.43-1.15-2.58-2.58-2.58a2.58 2.58 0 0 0-2.58 2.58c.01 1.4 1.11 2.53 2.49 2.58Zm1.03 7.28c-1.37.23-2.88-.01-3.94-.72-1.41-.94-1.41-2.48 0-3.42 1.07-.71 2.6-.95 3.97-.71"
+                        stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M12 14.63a.605.605 0 0 0-.19 0 2.573 2.573 0 0 1-2.48-2.58c0-1.43 1.15-2.58 2.58-2.58a2.58 2.58 0 0 1 2.58 2.58c-.01 1.4-1.11 2.54-2.49 2.58Zm-2.91 3.15c-1.41.94-1.41 2.48 0 3.42 1.6 1.07 4.22 1.07 5.82 0 1.41-.94 1.41-2.48 0-3.42-1.59-1.06-4.22-1.06-5.82 0Z"
+                        stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>12 persones are applied</span>
+            </div>
+        </div>
+        <div>
+            <button class="text-blue-600">View all apllies</button>
+        </div>
+    </div>
+</div>

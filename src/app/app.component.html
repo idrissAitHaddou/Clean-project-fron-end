@@ -1,0 +1,5 @@
+<app-navbar *ngIf="currentRouter"></app-navbar>
+<div style="min-height: calc(100vh - 164px);">
+    <router-outlet></router-outlet>
+</div>
+<app-footer *ngIf="currentRouter"></app-footer>

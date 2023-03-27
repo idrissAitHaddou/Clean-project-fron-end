@@ -1,0 +1,18 @@
+<div class="w-80">
+    <div class="w-full">
+        <form class="flex flex-col gap-y-4 w-full">
+            <div class="w-full">
+                <label for="tel" class="">Telephone (optional) </label>
+                <input class="w-full border p-2 mt-2 rounded-lg outline-none" type="text" placeholder="search...">
+            </div>
+            <div class="w-full">
+                <label for="tel" class="">Message (optional) </label>
+                <textarea class="w-full border p-2 mt-2 rounded-lg outline-none" placeholder="search..."></textarea>
+            </div>
+        </form>
+    </div>
+    <div mat-button mat-dialog-close class="flex justify-end items-center gap-x-2 mt-3">
+        <app-button-primary [text] = "'Apply'" [width] = "0"></app-button-primary>
+        <app-button-white [text] = "'Cancel'" [width] = "0"></app-button-white>
+    </div>
+</div>

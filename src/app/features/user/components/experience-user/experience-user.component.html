@@ -1,0 +1,54 @@
+<div class="w-full relative flex flex-col justify-center items-start border bg-gray-50 px-3 py-5 rounded-lg">
+    <span class="absolute -top-4 left-3 border p-2 font-medium rounded-lg bg-white">Your work experience</span>
+    <div class="w-full flex justify-start items-start mt-5">
+        <div class="w-1/3 flex flex-col justify-start items-start mr-3">
+            <p class="pt-3 text-xs">Where can people find you online ? </p>
+        </div>
+        <form class="w-2/3 flex flex-col gap-y-10 border rounded-lg p-4">
+            <div class="w-full flex justify-between items-center gap-x-2">
+                <div class="w-full flex flex-col">
+                    <label for="fullname" class="font-medium">Company * </label>
+                    <input class="border p-2 rounded-lg outline-none" type="text" placeholder="https://"
+                        value="">
+                </div>
+            </div>
+            <div class="w-full flex justify-between items-center gap-x-2">
+                <div class="w-full flex flex-col">
+                    <label for="fullname" class="font-medium">Title * </label>
+                    <input class="border p-2 rounded-lg outline-none" type="text" placeholder="https://"
+                        value="">
+                </div>
+            </div>
+            <div class="w-full flex justify-between items-center gap-x-2">
+                <div class="w-full flex flex-col">
+                    <label for="fullname" class="font-medium">Start date * </label>
+                    <input class="border p-2 rounded-lg outline-none" type="text" placeholder="https://"
+                        value="">
+                </div>
+            </div>
+            <div class="w-full flex justify-between items-center gap-x-2">
+                <div class="w-full flex flex-col">
+                    <label for="fullname" class="font-medium">End date * </label>
+                    <input class="border p-2 rounded-lg outline-none" type="text" placeholder="https://"
+                        value="">
+                </div>
+            </div>
+            <div class="w-full flex justify-between items-center gap-x-2">
+                <div class="flex items-center">
+                    <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="link-checkbox" class="ml-2 text-sm">I currently work here  </label>
+                </div>
+            </div>
+            <div class="w-full flex justify-between items-center gap-x-2">
+                <div class="w-full flex flex-col">
+                    <label for="fullname" class="font-medium">Description </label>
+                    <textarea class="border p-2 rounded-lg outline-none" rows="6"  placeholder="description"
+                        value=""></textarea>
+                </div>
+            </div>
+            <div class="w-full flex justify-end items-center gap-x-2">
+                <button type="submit"> <app-button-primary [text] = "'Save'" [width] = "100"></app-button-primary></button>
+            </div>
+        </form>
+    </div>
+</div>

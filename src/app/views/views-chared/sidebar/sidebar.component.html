@@ -1,0 +1,5 @@
+<div class="flex flex-col gap-y-3 justify-start pl-3 items-start w-48">
+    <ng-container *ngFor="let item of  iconItems">
+        <a [routerLink]="item.router"><app-icon-title-vertical [title] = "item.title" [icon] = "item.icon" [active] = "item.active"></app-icon-title-vertical></a>
+    </ng-container>
+</div>
